@@ -1,11 +1,5 @@
-import { Text, View } from "react-native";
+import { Redirect } from "expo-router";
 
-export default function Index() {
-  return (
-    <View className="flex flex-1 justify-center items-center">
-      <Text className="text-3xl font-normal">
-        Rubik's 3D
-      </Text>
-    </View>
-  );
+export default function index() {
+  return <Redirect href="./(root)/homescreen" />;
 }
